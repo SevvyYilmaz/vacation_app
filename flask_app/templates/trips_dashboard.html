@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here are all the trips </h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Duration</th>
+            <th>Departure Date</th>
+        </tr>
+<!--need to through each trip  one trip can be anything -->
+        {% for one_trip in all_trips %}
+        <tr>
+            <td>{{one_trip.name}}</td>
+            <td>{{one_trip.location}}</td>
+            <td>{{one_trip.duration}}</td>
+            <td>{{one_trip.departure_date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
